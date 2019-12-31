@@ -5,7 +5,7 @@ const router = express.Router();
 // @desc    Get all user's contacts
 // @access  Private
 router.get('/', (req, res) => {
-  res.send("Get user's contacts");
+  res.send('Get all contacts');
 });
 
 // @route   POST api/contacts
