@@ -12,7 +12,7 @@ const Login = () => {
     setUser({ ...user, [event.target.name]: event.target.value });
 
   const onSubmit = event => {
-    event.preventdefault();
+    event.preventDefault();
     console.log('Login Submit');
   };
 
