@@ -10,6 +10,9 @@ import Register from './components/auth/Register';
 import Login from './components/auth/Login';
 import Alerts from './components/layout/Alerts';
 
+// Import Utils
+import setAuthToken from './utils/setAuthToken';
+
 // Import State
 import ContactState from './context/contact/ContactState';
 import AuthState from './context/auth/AuthState';
