@@ -11,9 +11,6 @@ import Login from './components/auth/Login';
 import Alerts from './components/layout/Alerts';
 import PrivateRoute from './components/routing/PrivateRoute';
 
-// Import Utils
-import setAuthToken from './utils/setAuthToken';
-
 // Import State
 import ContactState from './context/contact/ContactState';
 import AuthState from './context/auth/AuthState';
