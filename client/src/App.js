@@ -3,7 +3,7 @@ import React, { Fragment } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 // Import Components
-import Navbar from './components/layout/NavBar';
+import Navbar from './components/NavBar';
 import Home from './components/pages/Home';
 import About from './components/pages/About';
 import Register from './components/auth/Register';
