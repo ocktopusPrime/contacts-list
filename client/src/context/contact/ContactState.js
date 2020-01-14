@@ -1,7 +1,8 @@
-import React, { useReducer } from 'react';
+import React, { useReducer, useContext } from 'react';
 import axios from 'axios';
 import ContactContext from './contactContext';
 import contactReducer from './contactReducer';
+import AuthContext from '../auth/authContext';
 import {
   GET_CONTACTS,
   ADD_CONTACT,
@@ -25,10 +26,21 @@ const ContactState = props => {
 
   const [state, dispatch] = useReducer(contactReducer, initialState);
 
+  // const authContext = useContext(AuthContext);
+  const { token } = useContext(AuthContext);
+  // const { token } = authContext;
+
   // Get Contacts
   const getContacts = async () => {
     try {
-      const res = await axios.get('/api/contacts');
+      const config = {
+        headers: {
+          'Content-Type': 'application/json',
+          'x-auth-token': token
+        }
+      };
+
+      const res = await axios.get('/api/contacts', config);
 
       dispatch({
         type: GET_CONTACTS,
