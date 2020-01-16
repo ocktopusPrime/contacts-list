@@ -74,4 +74,4 @@ router.post(
   }
 );
 
-export const authFunction = router;
+module.exports = router;

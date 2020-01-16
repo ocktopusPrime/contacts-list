@@ -124,4 +124,4 @@ router.delete('/:id', auth, async (req, res) => {
   }
 });
 
-export const contactsFunction = router;
+module.exports = router;

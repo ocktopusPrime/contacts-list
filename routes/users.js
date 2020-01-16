@@ -73,4 +73,4 @@ router.post(
   }
 );
 
-export const usersFunction = router;
+module.exports = router;
