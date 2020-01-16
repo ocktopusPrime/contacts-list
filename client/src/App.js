@@ -3,7 +3,7 @@ import React, { Fragment } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 // Import Components
-// import NavBar from './components/layout/NavBar';
+import NavBar from './components/layout/NavBar';
 import Home from './components/pages/Home';
 import About from './components/pages/About';
 import Register from './components/auth/Register';
@@ -26,7 +26,7 @@ const App = () => {
         <AlertState>
           <Router>
             <Fragment>
-              {/* <NavBar /> */}
+              <NavBar />
               <div className='container'>
                 <Alerts />
                 <Switch>
